@@ -1,0 +1,29 @@
+{
+  "case": "case3",
+  "title": "Long route completed with existing stations and no recommendation",
+  "input": {
+    "origin": [
+      30.7124776,
+      36.912747
+    ],
+    "destination": [
+      42.7032713,
+      41.1108059
+    ],
+    "start_time": "10:00",
+    "alternatives": 1
+  },
+  "expected": "A long baseline route completes with four charging/rest stops and Phase 4 recommends no unnecessary station.",
+  "baseline": {
+    "trip_status": "completed",
+    "trip_completed": true,
+    "stop_reason": "",
+    "total_travel_minutes": 1379.3860754607201,
+    "minimum_soc_percent": 12.935525020359878
+  },
+  "phase4": {
+    "enabled": true,
+    "recommended_station_count": 0
+  },
+  "source_run": "C:\\Users\\Emir\\Desktop\\CE492\\Project\\Phase2\\outputs\\visualizations\\_case_runs\\case3"
+}
