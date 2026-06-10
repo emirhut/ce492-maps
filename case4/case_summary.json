@@ -1,0 +1,29 @@
+{
+  "case": "case4",
+  "title": "Completed route improved by a proposed station",
+  "input": {
+    "origin": [
+      35.8339099,
+      40.6515833
+    ],
+    "destination": [
+      31.1674153,
+      40.8306562
+    ],
+    "start_time": "10:00",
+    "alternatives": 1
+  },
+  "expected": "Baseline completes; one Phase 4 station removes a long detour and saves about 128 minutes.",
+  "baseline": {
+    "trip_status": "completed",
+    "trip_completed": true,
+    "stop_reason": "",
+    "total_travel_minutes": 500.24988642666,
+    "minimum_soc_percent": 44.059132832271985
+  },
+  "phase4": {
+    "enabled": true,
+    "recommended_station_count": 1
+  },
+  "source_run": "C:\\Users\\Emir\\Desktop\\CE492\\Project\\Phase2\\outputs\\visualizations\\_case_runs\\case4"
+}
