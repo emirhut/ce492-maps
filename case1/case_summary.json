@@ -1,0 +1,29 @@
+{
+  "case": "case1",
+  "title": "Driver-break infeasibility repaired by a proposed station",
+  "input": {
+    "origin": [
+      40.5219,
+      41.0255
+    ],
+    "destination": [
+      34.6415,
+      36.8121
+    ],
+    "start_time": "10:00",
+    "alternatives": 1
+  },
+  "expected": "Baseline stops because no feasible charging/rest stop is reachable; Phase 4 makes it completable.",
+  "baseline": {
+    "trip_status": "driver_break_infeasible",
+    "trip_completed": false,
+    "stop_reason": "Driver break limit reached before any feasible charging station/rest-capable stop could be reached",
+    "total_travel_minutes": 574.5459384540912,
+    "minimum_soc_percent": 14.977616854463665
+  },
+  "phase4": {
+    "enabled": true,
+    "recommended_station_count": 1
+  },
+  "source_run": "C:\\Users\\Emir\\Desktop\\CE492\\Project\\Phase2\\outputs\\visualizations\\_case_runs\\case1"
+}
